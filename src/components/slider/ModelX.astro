@@ -1,0 +1,27 @@
+---
+import BackgroundImage from "../BackgroundImage.astro";
+import LandingSectionTitle from "../LandingSectionTitle.astro";
+---
+
+<section class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative">
+  <div class="relative flex flex-col h-full z-20">
+    <header class="text-center flex flex-col">
+      <LandingSectionTitle title="Model X" />
+      <a class="pt-2 underline underline-offset-[3px] text-sm text-center" href="./">Explorar inventario</a>
+    </header>
+
+    <footer class="flex flex-grow items-end gap-x-6 mx-auto pb-20 [&>a]:px-12 [&>a]:py-2">
+      <a
+        class="px-12 py-5 bg-zinc-800 text-opacity-90 text-white border-gray-700 rounded max-h-8 hover:bg-white hover:text-black transition-all duration-500 inline-flex items-center text-sm font-semibold"
+        href="./">Pedido personalizado</a
+      >
+      <a
+        class="px-12 py-5 bg-gray-200 bg-opacity-60 text-opacity-60 text-black border-gray-200 hover:bg-opacity-100 hover:text-opacity-100 transition-all duration-500 rounded max-h-8 inline-flex items-center text-sm font-semibold"
+        href="./">Prueba de conduccion</a
+      >
+    </footer>
+  </div>
+
+
+  <BackgroundImage imageSrc="/assets/model-x-bg.avif">
+</section>

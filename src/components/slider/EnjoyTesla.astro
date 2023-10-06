@@ -1,0 +1,26 @@
+---
+import BackgroundVideo from "../BackgroundVideo.astro";
+import LandingSectionTitle from "../LandingSectionTitle.astro";
+
+---
+
+<section
+  class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative"
+  data-header-color="white"
+>
+  <div class="relative flex flex-col h-full z-20">
+    <header class="text-center flex flex-col text-white">
+      <LandingSectionTitle title="Disfrute de Tesla" />
+      <a class="pt-2 text-sm text-center" href="./">Programe una prueba de conducción hoy mismo</a>
+    </header>
+
+    <footer class="flex flex-grow items-end gap-x-6 mx-auto pb-20 [&>a]:px-8 [&>a]:py-4">
+      <a
+        class="bg-transparent text-white border-white border-2 hover:bg-white hover:text-black transition-all duration-500 rounded max-h-8 inline-flex items-center text-sm font-[500]"
+        href="./">Prueba de conducción</a
+      >
+    </footer>
+  </div>
+
+  <BackgroundVideo videoSrc="/assets/enjoy-tesla.webm">
+</section>

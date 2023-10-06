@@ -1,0 +1,39 @@
+<footer class="landing-footer z-20 flex justify-center bg-transparent fixed bottom-6 mx-auto w-screen transition-all duration-500 opacity-0">
+  <nav class="[&>*]:text-xs text-white">
+    <ul class="flex gap-4 background-red bg-transparent">
+      <li>Alex Gutiérrez @ 2023</li>
+      <li><a href="./">Privacidad y Legal</a></li>
+      <li><a href="./">Contacto</a></li>
+      <li><a href="./">Noticias</a></li>
+      <li><a href="./">Seguir informado</a></li>
+      <li><a href="./">Localización de tiendas</a></li>
+    </ul>
+  </nav>
+</footer>
+
+<script>
+  const sectionElements = document.querySelectorAll(".landing-section");
+  const footerElement = document.querySelector('.landing-footer') as HTMLElement
+
+
+  const observerOptions = {
+    root: null,
+    rootMargin: "0px", // en cuanto se vea el elemento
+    threshold: 0.9, // porcentaje de visibilidad
+  };
+
+  const lastSection = Array.from(sectionElements).pop()
+    const footerObserver = new IntersectionObserver((entries) => {
+      entries.forEach((section => {
+      const { isIntersecting } = section
+      if (isIntersecting) {
+        footerElement.classList.remove('opacity-0')
+      } else {
+        footerElement.classList.add('opacity-0')
+      }
+    }))
+  }, observerOptions)
+
+  footerObserver.observe(lastSection)
+
+</script>

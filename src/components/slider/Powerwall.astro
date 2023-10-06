@@ -1,0 +1,26 @@
+---
+import BackgroundImage from "../BackgroundImage.astro";
+import LandingSectionTitle from "../LandingSectionTitle.astro";
+---
+
+<section
+  class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative"
+>
+  <div class="relative flex flex-col h-full z-20">
+    <header class="text-center flex flex-col">
+      <LandingSectionTitle title="Solar y Powerwall" />
+      <a class="pt-2 text-sm text-center" href="./">Energía para todos</a>
+    </header>
+
+    <footer
+      class="flex flex-grow items-end gap-x-6 mx-auto pb-20 [&>a]:px-20 [&>a]:py-5"
+    >
+      <a
+        class="bg-gray-900 bg-opacity-90 text-white text-opacity-75 hover:bg-black hover:text-white border-gray-200 rounded max-h-8 inline-flex items-center text-sm font-semibold"
+        href="./">Saber más</a
+      >
+    </footer>
+  </div>
+
+  <BackgroundImage imageSrc="/assets/powerwall-bg.avif">
+</section>

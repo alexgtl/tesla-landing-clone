@@ -1,0 +1,47 @@
+---
+import LandingFooter from "../components/LandingFooter.astro"
+import LandingHeader from "../components/LandingHeader.astro"
+import Accesories from "../components/slider/Accesories.astro"
+import EnjoyTesla from "../components/slider/EnjoyTesla.astro"
+import Model3 from "../components/slider/Model3.astro"
+import ModelS from "../components/slider/ModelS.astro"
+import ModelX from "../components/slider/ModelX.astro"
+import ModelY from "../components/slider/ModelY.astro"
+import Powerwall from "../components/slider/Powerwall.astro"
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout title="Tesla Website Reply Inspired by Alex Gutiérrez">
+  <LandingHeader />
+
+  <main
+    class="snap-y snap-mandatory relative w-full h-screen overflow-y-auto overflow-x-hidden scroll-smooth"
+  >
+    <div class="snap-center">
+      <ModelY />
+    </div>
+    <div class="snap-center">
+      <Model3 />
+    </div>
+    <div class="snap-center">
+      <ModelS />
+    </div>
+    <div class="snap-center">
+      <ModelX />
+    </div>
+
+    <div class="snap-center">
+      <EnjoyTesla />
+    </div>
+
+    <div class="snap-center">
+      <Powerwall />
+    </div>
+
+    <div class="snap-center">
+        <Accesories />
+    </div>
+  </main>
+
+  <LandingFooter>
+</Layout>
